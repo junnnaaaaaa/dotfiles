@@ -41,9 +41,21 @@ wal -i "$selected"
 # Set the wallpaper with swww
 swww img "$selected"
 
+#gtk theme
+wpg -a "$selected"
+wpg -s "$selected"
+
+
+
+#vesktop stuff
+walcord
+
 #restart waybar
 pkill waybar
 waybar
+
+#change mako theme
+./update-theme.sh
 
 # Optional: Notify the user
 notify-send "Wallpaper Changed" "Applied $selected with Pywal."

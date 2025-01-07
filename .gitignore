@@ -8,6 +8,7 @@
 !scripts/
 !waybar/
 !fish/
+!mako/
 !hyfetch.json
 !.gitignore
 
@@ -18,3 +19,4 @@
 !scripts/**
 !waybar/**
 !fish/**
+!mako/**
