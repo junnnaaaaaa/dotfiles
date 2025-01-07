@@ -45,7 +45,8 @@ swww img "$selected"
 wpg -a "$selected"
 wpg -s "$selected"
 
-
+#pywalfox
+pywalfox update
 
 #vesktop stuff
 walcord
