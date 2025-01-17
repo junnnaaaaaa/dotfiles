@@ -1,0 +1,22 @@
+# Ignore everything
+*
+
+# Allow specific folders and files
+!kitty/
+!rofi/
+!scripts/
+!waybar/
+!fish/
+!mako/
+!river/
+!hyfetch.json
+!.gitignore
+
+# Allow contents of the folders
+!kitty/**
+!rofi/**
+!scripts/**
+!waybar/**
+!fish/**
+!mako/**
+!river/**
