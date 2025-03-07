@@ -15,7 +15,7 @@ option=$(printf "Select\nPreview\nCancel" | rofi -dmenu -i -p "Wallpaper Action"
 case $option in
     "Select")
         # Use Rofi to select a wallpaper
-        selected=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | rofi -dmenu -i -p "Select Wallpaper")
+        selected=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \) | rofi -dmenu -i -p "Select Wallpaper")
         ;;
     "Preview")
         # Launch Yazi to browse wallpapers
@@ -48,15 +48,17 @@ wpg -s "$selected"
 #pywalfox
 pywalfox update
 
-#vesktop stuff
-walcord
-
+#vencord stuff
+~/pywal-discord/pywal-discord -t default
 #restart waybar
 pkill waybar
 waybar
 
 #change mako theme
 ./update-theme.sh
+
+#spotify
+pywal-spicetify text
 
 # Optional: Notify the user
 notify-send "Wallpaper Changed" "Applied $selected with Pywal."

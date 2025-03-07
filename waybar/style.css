@@ -64,9 +64,10 @@
  }
 
  #workspaces button {
-   padding: 0px 5px;
+   padding: 0px 0px;
    margin: 4px 3px;
    border-radius: 15px;
+   min-width: 20px;
    border: 0px;
    background: @color1;
    transition: all 0.3s ease-in-out;
